@@ -44,6 +44,10 @@
           color: #fff;
           text-shadow: 0 1px 0 #111;
         }
+
+        #optionsRadios1{
+            margin-top:-5px!important;
+        }
     </style>
         
 <div data-role="page" data-theme='b'>
@@ -68,10 +72,46 @@
     </div>
     <div data-role="content">   
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 " style="background-color:green;margin-top:10%">
-                    HOLA HOLAz<br>hola
+            <div class="col-xs-10 col-sm-5 col-md-4 col-lg-3 " style="margin-top:10%">
+                <div class="col-lg-5 col-lg-offset-4 " style="margin-top:5%">
+                     <a class="btn btn-primary btn-lg btn-block" href="main.html"><i class="fa fa-share-alt fa-lg "></i> Compartir</a>
+                </div>
+                <div class="col-lg-5 col-lg-offset-4" style="margin-top:5%">
+                    <a class="btn btn-primary btn-lg btn-block" href="main.html"><i class="fa fa-camera fa-lg"></i> Captura</a>
+                </div>    
+                <div class="col-lg-5 col-lg-offset-4 " style="margin-top:5%">
+                    <a class="btn btn-primary btn-lg btn-block" href="main.html"><i class="fa fa-trash-o fa-lg"></i> Eliminar</a>
+                </div>
+                <div class="col-lg-5 col-lg-offset-4 " style="margin-top:5%">
+                    <a class="btn btn-primary btn-lg btn-block" href="main.html"><i class="fa fa-dropbox fa-lg" ></i> Upload</a>
+                </div>
+                <div class="col-lg-5 col-lg-offset-4" style="margin-top:5%">
+                    <a class="btn btn-primary btn-lg btn-block" href="main.html"><i class="fa fa-envelope-o fa-lg"></i> Email</a>
+                </div>    
+            </div>
+            <div class="col-xs-10 col-sm-5 col-md-4 col-lg-6 " style="background-color:green;margin-top:5%;height:600px">
+            </div>
+            <div class="col-xs-10 col-sm-5 col-md-4 col-lg-3 " style="margin-top:5%;text-align:center">
+                <h1>Resolucion</h1>
+                <div class=" col-lg-12 radio" >
+                  <label>
+                    <input type="radio" name="optionsRadios"  id="optionsRadios1" value="option1" checked >
+                    <span>2592x1944</span>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                  </label>
+                </div>
+                <div class="radio disabled">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                    Option three is disabled
+                  </label>
+                </div>
 
-                
             </div>
         </div>
     </div>
