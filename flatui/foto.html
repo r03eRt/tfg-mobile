@@ -8,26 +8,25 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
 
 		<!-- jQueryMobileCSS - original without styling -->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" />
 
 		<!-- nativeDroid core CSS -->
         <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
 
 		<!-- nativeDroid: Light/Dark -->
         <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
-
+        
+      
 		<!-- nativeDroid: Color Schemes -->
         <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.pink.css" id='jQMnDColor' />
 
+        <!-- expansivo icons-->
+        <link rel="stylesheet" href="css/jqm-icon-pack-fa.css"  />
+            
 		<!-- jQuery / jQueryMobile Scripts -->
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
 
-             <!-- Loading Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-
-        <!-- Loading Flat UI -->
-        <link href="css/flat-ui.css" rel="stylesheet">
 
     </head>
     <body>
@@ -48,6 +47,23 @@
         #optionsRadios1{
             margin-top:-5px!important;
         }
+
+        #responsive_options{
+            display:none;
+        }
+
+        #options{
+            display:inline;
+        }
+        @media (max-width: 560px) {
+            #responsive_options{
+                display:inline;
+            }
+            #options{
+                display:none;
+            }
+        }
+
     </style>
         
 <div data-role="page" data-theme='b'>
@@ -70,7 +86,75 @@
         <li data-icon='false'><a href="#"><i class='fa fa-tachometer fa-lg'></i>Estado</a></li>
     </ul>
     </div>
-    <div data-role="content">   
+    <div class="ui-grid-b ui-responsive" style="margin-top:5%">
+        <div class="ui-block-a"  >
+            <div class="ui-grid-b" id="options">
+                <div class="ui-block-a" style="width:20%">a</div>
+                <div class="ui-block-b" style="width:60%">
+                    <div style="background:;width:80%;margin-left:10%">
+                        <input style="margin-bottom:10px"type="button"data-icon="share-square-o" value="Compartir">
+                        <input style="margin-bottom:10px"type="button"data-icon="camera" value="Foto">
+                        <input style="margin-bottom:10px"type="button"data-icon="trash-o" value="Eliminar">
+                        <input style="margin-bottom:10px"type="button"data-icon="dropbox" value="Subir">
+                        <input style="margin-bottom:10px"type="button"data-icon="envelope-o" value="Email">
+                    </div>
+                </div>
+                <div class="ui-block-c" style="width:20%;">c</div>
+            </div>
+
+
+            <!--responsive-->
+            <div class="class=ui-grid-d" style="background-color:lightblue;" id="responsive_options">
+                <div class="ui-block-a" style="background-color:orange;width:20%;padding-left:3.5%"><input  type="button"data-icon="share-square-o"></div>
+                <div class="ui-block-b" style="background-color:green;width:20%;padding-left:3.5%"><input type="button"data-icon="camera"></div>
+                <div class="ui-block-c" style="background-color:pink;width:20%;padding-left:3.5%"><input type="button"data-icon="trash-o"></div>
+                <div class="ui-block-d" style="background-color:lightblue;width:20%;padding-left:3.5%"><input type="button"data-icon="dropbox" ></div>
+                <div class="ui-block-e" style="background-color:red;width:20%;padding-left:3.5%"><input type="button"data-icon="envelope-o"></div>
+            </div>
+        </div>
+        
+           
+       
+        
+                   
+                    
+                    
+                   
+
+
+
+        <div class="ui-block-b" style="height:600px;background-color:red">
+            
+        </div>
+        <div class="ui-block-c">
+            <div class="ui-grid-b">
+                <div class="ui-block-a">Block A en c
+                   
+                </div>
+                <div class="ui-block-b"> 
+                    <fieldset data-role="controlgroup">
+                        <legend>Choose a pet:</legend>
+                            <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                            <label for="radio-choice-1">Cat</label>
+
+                            <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                            <label for="radio-choice-2">Dog</label>
+
+                            <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                            <label for="radio-choice-3">Hamster</label>
+
+                            <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"  />
+                            <label for="radio-choice-4">Lizard</label>
+                    </fieldset>
+                </div>
+                <div class="ui-block-b">Block C en c</div>
+            </div><!-- /grid-b -->
+        </div>
+    </div><!-- /grid-b -->
+
+
+
+  <!--  <div data-role="content">   
         <div class="row">
             <div class="col-xs-10 col-sm-5 col-md-4 col-lg-3 " style="margin-top:10%">
                 <div class="col-lg-5 col-lg-offset-4 " style="margin-top:5%">
@@ -114,7 +198,7 @@
 
             </div>
         </div>
-    </div>
+    </div>-->
 
 </div>
     
