@@ -4,49 +4,49 @@
  * PURPLE:
  * 
  * COLOR GUIDE:
- * 	Light: #ea3c89
- *  Dark: #DF3B83
+ * 	Light: #9C27B0
+ *  Dark: #7B1FA2
  *
  */
 
 
 .ui-bar-b,.ui-page-theme-b .ui-dialog-contain .ui-title {
-	border-bottom: 2px solid #ea3c89;
+	border-bottom: 2px solid #9C27B0;
 }
 
 .ui-btn-down-b .ui-btn-inner,.ui-btn-down-b .ui-btn-text .ui-link-inherit,.ui-listview .ui-btn-hover-b,.ui-input-search.ui-page-theme-b {
-	background-color: #ea3c89;
+	background-color: #9C27B0;
 }
 
 .ui-page-theme-b form .ui-btn-down-b,.ui-page-theme-b form .ui-mini.ui-checkbox-on,.ui-page-theme-b form .ui-mini.ui-radio-on {
-	background-color: #DF3B83;
+	background-color: #7B1FA2;
 }
 
 .ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-page-theme-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head+body .ui-btn.ui-btn-b:hover,
 .ui-page-theme-b .ui-btn:active, html .ui-bar-b .ui-btn:active, html .ui-page-theme-b .ui-btn:active, html body .ui-group-theme-b .ui-btn:active, html head+body .ui-btn.ui-btn-b:active {
 	color: #ffffff;
-	background-color: #DF3B83;
+	background-color: #7B1FA2;
 }
 
-.ui-page-theme-b div.ui-input-text.ui-focus:after{background-color: #DF3B83;}
-.ui-page-theme-b div.ui-input-text.ui-focus:before{background-color: #DF3B83;}
-.ui-page-theme-b div.ui-input-text.ui-focus {border-bottom: 1px solid #DF3B83;}
+.ui-page-theme-b div.ui-input-text.ui-focus:after{background-color: #7B1FA2;}
+.ui-page-theme-b div.ui-input-text.ui-focus:before{background-color: #7B1FA2;}
+.ui-page-theme-b div.ui-input-text.ui-focus {border-bottom: 1px solid #7B1FA2;}
 
 textarea.ui-page-theme-b.ui-input-text:focus {
-	border: 1px solid #DF3B83;
+	border: 1px solid #7B1FA2;
 }
 
 .ui-page-theme-b .ui-slider-bg.ui-btn-active,
 .ui-page-theme-b .ui-panel-open{
-	background-color: #DF3B83;
+	background-color: #7B1FA2;
 }
 
 .ui-page-theme-b .ui-link,.ui-page-theme-b .ui-li a,.nativeDroidCards ul[data-nativedroid-plugin="twitter"] a {
-	color: #DF3B83;
+	color: #7B1FA2;
 }
 
 .ui-page-theme-b .table-stroke tr:nth-child(even) .ui-link {
-	color: #ea3c89;
+	color: #9C27B0;
 }
 
 .ui-slider-track .ui-btn.ui-slider-handle {
@@ -55,15 +55,15 @@ textarea.ui-page-theme-b.ui-input-text:focus {
 
 .ui-slider-track .ui-btn.ui-slider-handle.ui-focus {
 	border: 10px solid rgba(207,159,231,0.5);	
-	box-shadow: 0px 0px 2px 0px #DF3B83;
+	box-shadow: 0px 0px 2px 0px #7B1FA2;
 }
 
 .ui-slider-bg.ui-btn-active {
-	background-color: #ea3c89;
+	background-color: #9C27B0;
 }
 progress::-webkit-progress-value {
-	background-color: #DF3B83;
+	background-color: #7B1FA2;
 }
 progress::-moz-progress-bar {
-	background-color: #DF3B83;
+	background-color: #7B1FA2;
 }
