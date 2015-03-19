@@ -55,12 +55,36 @@
         #options{
             display:inline;
         }
+
+        #container_resol{
+            display:inline;
+        }
+        #container_resol_resp{
+                display:none;
+            }
+
         @media (max-width: 560px) {
             #responsive_options{
                 display:inline;
+                background-color: white;
             }
             #options{
                 display:none;
+            }
+            #container_options{
+               height: 45px; 
+            }
+
+            #responsive_spinner{
+                display:inline;
+                background-color: white;
+            }
+            
+            #container_resol{
+                display:none;
+            }
+            #container_resol_resp{
+                display:inline;
             }
         }
 
@@ -87,9 +111,9 @@
     </ul>
     </div>
     <div class="ui-grid-b ui-responsive" style="margin-top:5%">
-        <div class="ui-block-a"  >
+        <div class="ui-block-a"  style="background:" id="container_options">
             <div class="ui-grid-b" id="options">
-                <div class="ui-block-a" style="width:20%">a</div>
+                <div class="ui-block-a" style="width:20%"></div>
                 <div class="ui-block-b" style="width:60%">
                     <div style="background:;width:80%;margin-left:10%">
                         <input style="margin-bottom:10px"type="button"data-icon="share-square-o" value="Compartir">
@@ -99,10 +123,8 @@
                         <input style="margin-bottom:10px"type="button"data-icon="envelope-o" value="Email">
                     </div>
                 </div>
-                <div class="ui-block-c" style="width:20%;">c</div>
+                <div class="ui-block-c" style="width:20%;"></div>
             </div>
-
-
             <!--responsive-->
             <div class="class=ui-grid-d" style="background-color:lightblue;" id="responsive_options">
                 <div class="ui-block-a" style="background-color:orange;width:20%;padding-left:3.5%"><input  type="button"data-icon="share-square-o"></div>
@@ -112,25 +134,30 @@
                 <div class="ui-block-e" style="background-color:red;width:20%;padding-left:3.5%"><input type="button"data-icon="envelope-o"></div>
             </div>
         </div>
-        
-           
-       
-        
-                   
-                    
-                    
-                   
-
-
 
         <div class="ui-block-b" style="height:600px;background-color:red">
             
         </div>
-        <div class="ui-block-c">
-            <div class="ui-grid-b">
-                <div class="ui-block-a">Block A en c
-                   
+        <div class="ui-block-c" style="background:">
+            <div class="ui-grid-b" id="container_resol_resp">
+                <div style="width:100%;background:">
+                    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center"><!--checked="checked"-->
+                        <input type="radio" name="radio-choice-2" id="radio-choice-21" value="choice-1"  style="width:25%;" />
+                        <label for="radio-choice-21" style="background:pink">Cat</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-22" value="choice-2" style="width:25%" />
+                        <label for="radio-choice-22" style="background:orange;">Dog</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-23" value="choice-3" style="width:25%"  />
+                        <label for="radio-choice-23" style="background:red;">Hamster</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-24" value="choice-4" style="width:25%" />
+                        <label for="radio-choice-24" style="background:green;">Lizard</label>        
+                    </fieldset>
                 </div>
+            </div>
+            <div class="ui-grid-b" id="container_resol">
+                <div class="ui-block-a"></div>
                 <div class="ui-block-b"> 
                     <fieldset data-role="controlgroup">
                         <legend>Choose a pet:</legend>
@@ -147,7 +174,7 @@
                             <label for="radio-choice-4">Lizard</label>
                     </fieldset>
                 </div>
-                <div class="ui-block-b">Block C en c</div>
+                <div class="ui-block-b"></div>
             </div><!-- /grid-b -->
         </div>
     </div><!-- /grid-b -->
