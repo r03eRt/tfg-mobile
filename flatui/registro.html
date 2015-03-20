@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+         <meta charset="utf-8">
+        <title>nativeDroid - Theme for jQuery Mobile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" />
+        
+        <!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" href="css/main.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+        
+      
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.pink.css" id='jQMnDColor' />
+
+        <!-- expansivo icons-->
+        <link rel="stylesheet" href="css/jqm-icon-pack-fa.css"  />
+            
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
+
+
+    </head>
+    <body>
+    
+
+        
+<div data-role="page" data-theme='b'>
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+        <a href="#mypanel" data-role='button' ><i class='lIcon fa fa-bars'></i></a>
+    </div>
+    <div data-role="panel" data-display="push" id="mypanel" data-theme="b">
+    <ul data-role="listview">
+        <li  id="div_avatar">
+        <img src="images/avatar.png" class="img-circle" width="80" height="80">
+        Usuario:xxxxxx<br>
+        Dispositivo:xxxxxxxxx
+        </li>
+        <li data-icon='false'><a href="#"><i class='fa fa-cog fa-lg'></i>Ajustes</a></li>
+        <li data-icon='false'><a href="#"><i class='fa fa-camera fa-lg'></i>Tomar Foto</a></li>
+        <li data-icon='false'><a href="#"><i class='fa fa-video-camera fa-lg'></i>Tomar Video</a></li>
+        <li data-icon='false'><a href="#"><i class='fa fa-desktop fa-lg'></i>Streaming</a></li>
+        <li data-icon='false'><a href="#"><i class='fa fa-gamepad fa-lg'></i>Controles</a></li>
+        <li data-icon='false'><a href="#"><i class='fa fa-file-text fa-lg'></i>Registro</a></li>
+        <li data-icon='false'><a href="#"><i class='fa fa-tachometer fa-lg'></i>Estado</a></li>
+    </ul>
+
+    <style type="text/css" media="screen">
+                .ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-page-theme-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head+body .ui-btn.ui-btn-b:hover,
+        .ui-page-theme-b .ui-btn:active, html .ui-bar-b .ui-btn:active, html .ui-page-theme-b .ui-btn:active, html body .ui-group-theme-b .ui-btn:active, html head+body .ui-btn.ui-btn-b:active {
+            color: #ffffff;
+            background-color: rgba(255,255,255,0.1);
+        }   
+
+        .ui-li-heading{
+            color: #7B1FA2;
+        }
+        .ui-li-desc{
+        }
+
+        .ui-listview .ui-li-aside{
+
+             color: #7B1FA2;
+        }
+       
+       .ui-page-theme-b .ui-body-inherit, html .ui-bar-b .ui-body-inherit, html .ui-page-theme-b .ui-body-inherit{
+             color: #7B1FA2;
+       }
+        #header_h1{
+            font-size:24px;
+            font-weight:600;
+        }
+
+        .ui-listview > .ui-li-has-count > .ui-btn, .ui-listview > .ui-li-static.ui-li-has-count, .ui-listview > .ui-li-divider.ui-li-has-count {
+          padding-right: 2.8125em;
+          background-color: rgba(123,31,162,0.15);
+        }
+
+    </style>
+    </div>
+        <div class="content-primary">
+            <ul data-role="listview" data-theme="d" data-divider-theme="d" class="ui-listview" >
+                <!--INICIO REGISTRO-->
+                <!--cabecera-->
+                <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d ui-li-has-count">
+                    <h1 id="header_h1">Lunes, 15 Marzo, 2015 </h1>
+                    <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">2</span>
+                </li>
+                <!--Articulo 1-->
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div"   data-theme="d" class="ui-btn  ui-li-has-arrow ui-li ui-btn-up-d">
+                    <div class="ui-btn-inner ui-li">
+                        <div class="ui-btn-text">
+                            <a href="index.html" class="ui-link-inherit">
+                                <p class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p>
+                                <h3 class="ui-li-heading"><strong>Stephen Weber</strong></h3>
+                                 <p class="ui-li-desc"><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </a>
+                        </div>
+                        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                    </div>
+                </li>
+                <!--Articulo 2-->
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-theme="d" class="ui-btn  ui-li-has-arrow ui-li ui-btn-up-d">
+                    <div class="ui-btn-inner ui-li">
+                        <div class="ui-btn-text">
+                            <a href="index.html" class="ui-link-inherit">
+                                <p class="ui-li-aside ui-li-desc"><strong>9:18</strong>AM</p>
+                                <h3 class="ui-li-heading"><strong>jQuery Team</strong></h3>
+                                <p class="ui-li-desc"><strong>Boston Conference Planning</strong></p>
+                            </a>
+                        </div>
+                        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                    </div>
+                </li>
+                <!--FIN REGISTRO-->
+                <!--INICIO REGISTRO-->
+                <!--cabecera-->
+                <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d ui-li-has-count">
+                    <h1 id="header_h1">martes, 16 Marzo, 2015 </h1>
+                    <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">3</span>
+                </li>
+                <!--Articulo 1-->
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div"   data-theme="d" class="ui-btn  ui-li-has-arrow ui-li ui-btn-up-d">
+                    <div class="ui-btn-inner ui-li">
+                        <div class="ui-btn-text">
+                            <a href="index.html" class="ui-link-inherit">
+                                <p class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p>
+                                <h3 class="ui-li-heading"><strong>Stephen Weber</strong></h3>
+                                 <p class="ui-li-desc"><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </a>
+                        </div>
+                        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                    </div>
+                </li>
+                <!--Articulo 2-->
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-theme="d" class="ui-btn  ui-li-has-arrow ui-li ui-btn-up-d">
+                    <div class="ui-btn-inner ui-li">
+                        <div class="ui-btn-text">
+                            <a href="index.html" class="ui-link-inherit">
+                                <p class="ui-li-aside ui-li-desc"><strong>9:18</strong>AM</p>
+                                <h3 class="ui-li-heading"><strong>jQuery Team</strong></h3>
+                                <p class="ui-li-desc"><strong>Boston Conference Planning</strong></p>
+                            </a>
+                        </div>
+                        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                    </div>
+                </li>
+                <!--Articulo 3-->
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-theme="d" class="ui-btn  ui-li-has-arrow ui-li ui-btn-up-d">
+                    <div class="ui-btn-inner ui-li">
+                        <div class="ui-btn-text">
+                            <a href="index.html" class="ui-link-inherit">
+                                <p class="ui-li-aside ui-li-desc"><strong>9:18</strong>AM</p>
+                                <h3 class="ui-li-heading"><strong>jQuery Team</strong></h3>
+                                <p class="ui-li-desc"><strong>Boston Conference Planning</strong></p>
+                            </a>
+                        </div>
+                        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                    </div>
+                </li>
+                <!--FIN REGISTRO-->
+
+            </ul>
+        </div>
+</div>
+    
+    </body>
+</html>

@@ -704,6 +704,13 @@
         #container_options .ui-btn:hover{
                 background-color: #7B1FA2;
             }
+
+        #container_options2 .ui-btn{
+                background-color: #9C27B0;
+            }
+        #container_options2 .ui-btn:hover{
+                background-color: #7B1FA2;
+            }
         #div_avatar{
             height: 100px;
             margin-top: 24px;
@@ -717,11 +724,66 @@
                 background-color: black;
             }
 
+
+            #time_resp{
+              display:none;
+            }
+
+            #time_grabar{
+              display:inline;
+            }
+
+            #time_grabar .ui-btn{
+                background-color: #9C27B0;
+            }
+
+            #time_grabar .ui-btn:hover{
+                background-color: #7B1FA2;
+            }
+
+            #responsive_options_stream{
+            display:none;
+          }
+
+          #responsive_options_responsive{
+              display:none;
+          }
+          #container_options{
+            display:inline;
+          }
+
+
+
         @media (max-width: 560px) {
+          #responsive_options_stream{
+            display:inline;
+          }
+
+          #responsive_options_responsive{
+              display:inline;
+          }
+
+          #container_options{
+            display:inline;
+          }
+
             #responsive_options{
                 display:inline;
                 background-color: white;
             }
+            
+            #responsive_options2{
+              display:inline;
+              background-color: white;
+              display:none;
+            }
+
+            #container_options2{
+              height: 50px; 
+              display:none;
+
+            }
+
             #options{
                 display:none;
             }
@@ -758,12 +820,47 @@
                 padding-left:3%;
             }
 
+            .resp-btn2 {
+                background-color: #9C27B0;
+                width:20%;
+                padding-left:8%;
+                border:1px solid black;
+
+            }
+
+            .resp-btn2:hover{
+                background-color: #7B1FA2;
+                padding-left:8%;
+            }
+
+
+            #grabar .ui-btn{
+                background-color: #9C27B0;
+            }
+             #grabar .ui-btn:hover{
+                background-color: #7B1FA2;
+            }
+
+                         
+            #time_resp{
+              display:inline;
+              text-align:center!important;
+              margin-left: 32%;
+              margin-top:20px;
+            }
+
+            #time_grabar{
+              display:none;
+            }
+
            .ui-input-btn input {
             background-color: transparent!important;
            }
            .ui-input-btn input:hover{
             background-color: transparent!important;
            }
+
+
 
            #container_options .ui-btn {
                 background-color: transparent;

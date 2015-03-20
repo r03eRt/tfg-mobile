@@ -42,7 +42,7 @@ textarea.ui-page-theme-b.ui-input-text:focus {
 }
 
 .ui-page-theme-b .ui-link,.ui-page-theme-b .ui-li a,.nativeDroidCards ul[data-nativedroid-plugin="twitter"] a {
-	color: #7B1FA2;
+	color: white;
 }
 
 .ui-page-theme-b .table-stroke tr:nth-child(even) .ui-link {
