@@ -665,3 +665,118 @@
     margin-left: 0;
   }
 }
+
+
+.ui-page-theme-b .ui-slider-bg.ui-btn-active, .ui-page-theme-b .ui-panel-open {
+         background: linear-gradient(to bottom, rgb(2,2,2) 0%,rgb(38,43,50) 100%);
+        }
+
+        .ui-page-theme-b .ui-slider-bg.ui-btn-active, .ui-page-theme-b .ui-panel-open {
+            background: linear-gradient(to bottom, rgb(2,2,2) 0%,rgb(38,43,50) 100%);
+        }
+
+        .ui-body-b, .ui-page-theme-b .ui-body-inherit, html .ui-bar-b .ui-body-inherit, html .ui-body-b .ui-body-inherit, html body .ui-group-theme-b .ui-body-inherit, html .ui-panel-page-container-b {
+          color: #fff;
+          text-shadow: 0 1px 0 #111;
+        }
+
+        #optionsRadios1{
+            margin-top:-5px!important;
+        }
+
+        #responsive_options{
+            display:none;
+        }
+
+        #options{
+            display:inline;
+        }
+
+        #container_resol{
+            display:inline;
+        }
+        #container_resol_resp{
+                display:none;
+            }
+         #container_options .ui-btn{
+                background-color: #9C27B0;
+            }
+        #container_options .ui-btn:hover{
+                background-color: #7B1FA2;
+            }
+        #div_avatar{
+            height: 100px;
+            margin-top: 24px;
+            padding-bottom: 0px;
+        }
+
+        .ui-page-theme-b .ui-btn:focus, html .ui-bar-b .ui-btn:focus, html .ui-body-b .ui-btn:focus, html body .ui-group-theme-b .ui-btn:focus, html head+body .ui-btn.ui-btn-b:focus, .ui-page-theme-b .ui-focus, html .ui-bar-b .ui-focus, html .ui-body-b .ui-focus, html body .ui-group-theme-b .ui-focus, html head+body .ui-btn-b.ui-focus, html head+body .ui-body-b.ui-focus {
+                -webkit-box-shadow: 0 0 0px rgba(0,0,0,0);
+                -moz-box-shadow: 0 0 0px rgba(0,0,0,0);
+                box-shadow: 0 0 0px rgba(0,0,0,0);
+                background-color: black;
+            }
+
+        @media (max-width: 560px) {
+            #responsive_options{
+                display:inline;
+                background-color: white;
+            }
+            #options{
+                display:none;
+            }
+            #container_options{
+               height: 50px; 
+            }
+            
+            #responsive_spinner{
+                display:inline;
+                background-color: white;
+            }
+            
+            #container_resol{
+                display:none;
+            }
+            #container_resol_resp{
+                display:inline;
+            }
+
+            .ui-page-theme-b .ui-checkbox .ui-checkbox-on, .ui-page-theme-b .ui-radio .ui-radio-on {
+              background-color: rgba(184,92,224,0.8) !important;
+            }
+
+            .resp-btn {
+                background-color: #9C27B0;
+                width:20%;
+                padding-left:3%;
+                border:1px solid black;
+
+            }
+            .resp-btn:hover{
+                background-color: #7B1FA2;
+                width:20%;
+                padding-left:3%;
+            }
+
+           .ui-input-btn input {
+            background-color: transparent!important;
+           }
+           .ui-input-btn input:hover{
+            background-color: transparent!important;
+           }
+
+           #container_options .ui-btn {
+                background-color: transparent;
+            }
+             #container_options .ui-btn:hover{
+                background-color: transparent;
+            }
+
+            .ui-page-theme-b .ui-btn:focus, html .ui-bar-b .ui-btn:focus, html .ui-body-b .ui-btn:focus, html body .ui-group-theme-b .ui-btn:focus, html head+body .ui-btn.ui-btn-b:focus, .ui-page-theme-b .ui-focus, html .ui-bar-b .ui-focus, html .ui-body-b .ui-focus, html body .ui-group-theme-b .ui-focus, html head+body .ui-btn-b.ui-focus, html head+body .ui-body-b.ui-focus {
+                -webkit-box-shadow: 0 0 0px rgba(0,0,0,0);
+                -moz-box-shadow: 0 0 0px rgba(0,0,0,0);
+                box-shadow: 0 0 0px rgba(0,0,0,0);
+                background-color: black;
+            }
+
+        }

@@ -8,43 +8,33 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
 
 		<!-- jQueryMobileCSS - original without styling -->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" />
+        
+        <!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" href="css/main.css" />
 
 		<!-- nativeDroid core CSS -->
         <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
 
 		<!-- nativeDroid: Light/Dark -->
         <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
-
+        
+      
 		<!-- nativeDroid: Color Schemes -->
         <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.pink.css" id='jQMnDColor' />
 
+        <!-- expansivo icons-->
+        <link rel="stylesheet" href="css/jqm-icon-pack-fa.css"  />
+            
 		<!-- jQuery / jQueryMobile Scripts -->
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
 
-             <!-- Loading Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-
-        <!-- Loading Flat UI -->
-        <link href="css/flat-ui.css" rel="stylesheet">
 
     </head>
     <body>
-    <style type="text/css" media="screen">
-        .ui-page-theme-b .ui-slider-bg.ui-btn-active, .ui-page-theme-b .ui-panel-open {
-         background: linear-gradient(to bottom, rgb(2,2,2) 0%,rgb(38,43,50) 100%);
-        }
+    
 
-        .ui-page-theme-b .ui-slider-bg.ui-btn-active, .ui-page-theme-b .ui-panel-open {
-            background: linear-gradient(to bottom, rgb(2,2,2) 0%,rgb(38,43,50) 100%);
-        }
-
-        .ui-body-b, .ui-page-theme-b .ui-body-inherit, html .ui-bar-b .ui-body-inherit, html .ui-body-b .ui-body-inherit, html body .ui-group-theme-b .ui-body-inherit, html .ui-panel-page-container-b {
-          color: #fff;
-          text-shadow: 0 1px 0 #111;
-        }
-    </style>
         
 <div data-role="page" data-theme='b'>
     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
@@ -52,7 +42,7 @@
     </div>
     <div data-role="panel" data-display="push" id="mypanel" data-theme="b">
     <ul data-role="listview">
-        <li style="height:120px">
+        <li  id="div_avatar">
         <img src="images/avatar.png" class="img-circle" width="80" height="80">
         Usuario:xxxxxx<br>
         Dispositivo:xxxxxxxxx
@@ -66,16 +56,105 @@
         <li data-icon='false'><a href="#"><i class='fa fa-tachometer fa-lg'></i>Estado</a></li>
     </ul>
     </div>
-    <div data-role="content">   
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 " style="background-color:green;margin-top:10%">
-                    HOLA HOLAz<br>hola
-
-                
+    <div class="ui-grid-b ui-responsive" style="margin-top:5%">
+        <div class="ui-block-a"  style="background:" id="container_options">
+            <div class="ui-grid-b" id="options">
+                <div class="ui-block-a" style="width:20%"></div>
+                <div class="ui-block-b" style="width:60%;margin-top: 20%;">
+                    <div style="background:;width:80%;margin-left:10%">
+                        <input style="margin-bottom:10px"type="button"data-icon="share-square-o" value="Compartir">
+                        <input style="margin-bottom:10px"type="button"data-icon="video" value="Video">
+                        <input style="margin-bottom:10px"type="button"data-icon="trash-o" value="Eliminar">
+                        <input style="margin-bottom:10px"type="button"data-icon="dropbox" value="Subir">
+                        <input style="margin-bottom:10px"type="button"data-icon="envelope-o" value="Email">
+                    </div>
+                </div>
+                <div class="ui-block-c" style="width:20%;"></div>
+            </div>
+            <!--responsive-->
+            <div class="class=ui-grid-d" style="background-color:lightblue;" id="responsive_options">
+                <div class="ui-block-a resp-btn" ><input  type="button"data-icon="share-square-o"></div>
+                <div class="ui-block-b resp-btn" ><input type="button"data-icon="video"></div>
+                <div class="ui-block-c resp-btn" ><input type="button"data-icon="trash-o"></div>
+                <div class="ui-block-d resp-btn" ><input type="button"data-icon="dropbox" ></div>
+                <div class="ui-block-e resp-btn" ><input type="button"data-icon="envelope-o"></div>
             </div>
         </div>
-    </div>
 
+        <div class="ui-block-b" style="height:600px;background-color:rgba(230,230,230,0.3);">
+            
+        </div>
+        <div class="ui-block-c" style="background:">
+            <div class="ui-grid-b" id="container_resol_resp">
+                <div style="width:100%;background:">
+                     <legend style="margin-left:40%">Resolucion</legend>
+                    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center"><!--checked="checked"-->
+                        <input type="radio" name="radio-choice-2" id="radio-choice-21" checked="checked" value="choice-1"  style="width:25%;" />
+                        <label for="radio-choice-21" style="font-size:11px">1920x1080</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-22" value="choice-2" style="width:25%" />
+                        <label for="radio-choice-22" style="font-size:11px">1280x800</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-23" value="choice-3" style="width:25%"  />
+                        <label for="radio-choice-23" style="font-size:11px">800x600</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-24" value="choice-4" style="width:25%" />
+                        <label for="radio-choice-24" style="font-size:11px">640x480</label>        
+                    </fieldset>
+
+                    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center"><!--checked="checked"-->
+                        <legend style="margin-left:40%">Formato</legend>
+                        <input type="radio" name="radio-choice-2" id="radio-choice-21" checked="checked" value="choice-1"  style="width:25%;" />
+                        <label for="radio-choice-21" style="font-size:11px">.AVI</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-22" value="choice-2" style="width:25%" />
+                        <label for="radio-choice-22" style="font-size:11px">.MP$</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-23" value="choice-3" style="width:25%"  />
+                        <label for="radio-choice-23" style="font-size:11px">.MPEG</label>
+
+                        <input type="radio" name="radio-choice-2" id="radio-choice-24" value="choice-4" style="width:25%" />
+                        <label for="radio-choice-24" style="font-size:11px">.H24</label>        
+                    </fieldset>
+                </div>
+            </div>
+            <div class="ui-grid-b" id="container_resol">
+                <div class="ui-block-a" style="width:20%"></div>
+                <div class="ui-block-b" style="margin-top:0%;width:60%"> 
+                    <fieldset data-role="controlgroup">
+                        <legend>Resolucion</legend>
+                            <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                            <label for="radio-choice-1">1920x1080</label>
+
+                            <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                            <label for="radio-choice-2">1280x800</label>
+
+                            <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                            <label for="radio-choice-3">800x600</label>
+
+                            <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"  />
+                            <label for="radio-choice-4">640x480</label>
+                    </fieldset>
+
+                     <fieldset data-role="controlgroup">
+                        <legend style="text-align:center">Formato</legend>
+                            <input type="radio" name="radio-choice2" id="radio-choice2-1" value="choice-1" checked="checked" />
+                            <label for="radio-choice2-1">.AVI</label>
+
+                            <input type="radio" name="radio-choice2" id="radio-choice2-2" value="choice-2"  />
+                            <label for="radio-choice2-2">.MP4</label>
+
+                            <input type="radio" name="radio-choice2" id="radio-choice2-3" value="choice-3"  />
+                            <label for="radio-choice2-3">.MPEG</label>
+
+                            <input type="radio" name="radio-choice2" id="radio-choice2-4" value="choice-4"  />
+                            <label for="radio-choice2-4">.H24</label>
+                    </fieldset>
+                </div>
+                <div class="ui-block-c" style="width:20%"></div>
+            </div><!-- /grid-b -->
+        </div>
+    </div><!-- /grid-b -->
 </div>
     
     </body>
