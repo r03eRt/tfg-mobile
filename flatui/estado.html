@@ -69,7 +69,6 @@
       .ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-page-theme-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head+body .ui-btn.ui-btn-b:hover,
         .ui-page-theme-b .ui-btn:active, html .ui-bar-b .ui-btn:active, html .ui-page-theme-b .ui-btn:active, html body .ui-group-theme-b .ui-btn:active, html head+body .ui-btn.ui-btn-b:active {
             color: #ffffff;
-            background-color: rgba(255,255,255,0.1);
         }  
 
     #list_resp .ui-btn-inner {
@@ -79,7 +78,7 @@
     </style>
 
     <!--Container_responsivo-->        
-    <ul data-role="listview" class="ui-listview" style="display:inline" id="list_resp">
+    <ul data-role="listview" class="ui-listview"  id="list_resp">
         <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div"  data-theme="c" class="ui-btn ui-li ui-btn-up-c">
             <div class="ui-btn-inner ui-li">
                 <div class="ui-btn-text">
@@ -129,15 +128,26 @@
             padding-top:8px;
             padding-bottom:8px;
         }
+        #no_resp{
+                margin-top:5%;
+                display:inline;
+            }
+        #list_resp{
+                display:none;
+            }
         @media (max-width: 560px) {
 
             #no_resp{
                 display:none;
             }
+
+            #list_resp{
+                display:inline;
+            }
         }  
     </style>
 
-    <div class="ui-grid-b ui-responsive" style="margin-top:5%;display:none" id="no_resp">
+    <div class="ui-grid-b ui-responsive"  id="no_resp">
         <div class="ui-block-a"  style="background:" id="container_options">
             <div class="ui-grid-b" id="options">
                 <div class="ui-block-a" style="width:20%"></div>
@@ -165,14 +175,7 @@
                 </div>
                 <div class="ui-block-c" style="width:20%;"></div>
             </div>
-            <!--responsive-->
-            <div class="class=ui-grid-d" style="background-color:lightblue;" id="responsive_options">
-                <div class="ui-block-a resp-btn" ><input  type="button"data-icon="share-square-o"></div>
-                <div class="ui-block-b resp-btn" ><input type="button"data-icon="camera"></div>
-                <div class="ui-block-c resp-btn" ><input type="button"data-icon="trash-o"></div>
-                <div class="ui-block-d resp-btn" ><input type="button"data-icon="dropbox" ></div>
-                <div class="ui-block-e resp-btn" ><input type="button"data-icon="envelope-o"></div>
-            </div>
+
         </div>
 
         <div class="ui-block-b" style="height:600px">
